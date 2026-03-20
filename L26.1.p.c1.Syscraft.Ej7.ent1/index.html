@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumento de Sueldo</title>
+    
+</head>
+<body>
+    <script type="module">
+        import cEmpresa from "./dist/controller/Cl_cEmpresa.js";
+        new cEmpresa();
+    </script>
+    
+    <!-- Formulario para ingresar personas -->
+    <section id="personas" hidden>
+        <h3>Aumento de Sueldo</h3>
+        
+        <div style="margin-bottom: 10px;">
+            <label>Nombre:<br>
+                <input type="text" id="personas_inNombre" placeholder="Ej: Juan">
+            </label>
+        </div>
+        
+        <div style="margin-bottom: 10px;">
+            <label>Tipo (obr/adm):<br>
+                <input type="text" id="personas_inTipo" placeholder="1 para obrero o 2 para administrativo">
+            </label>
+        </div>
+        
+        <div style="margin-bottom: 10px;">
+            <label>Salario:<br>
+                <input type="number" id="personas_inSueldo" placeholder="Ej: 100">
+            </label>
+        </div>
+        
+        <div>
+            <button id="personas_btCancelar">Cancelar</button>
+            <button id="personas_btAceptar">Aceptar</button>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Vista principal -->
+    <div id="body">
+        <div style="margin-bottom:20px;">
+            <button id="body_btProcesar1Persona">Procesar 1 Persona</button>
+        </div>
+
+        <!-- AQUÍ SE INSERTARÁN LOS REGISTROS DINÁMICAMENTE -->
+        <!-- <div id="registrosPersonas"></div> -->
+
+        <div class="total">
+            <strong>El total de monto adicional que debe pagar la empresa es de:</strong> 
+            $<span id="body_lblMontoPagar">0</span>
+        </div>
+        <div class="total">
+            <strong>El porcentaje de personal obrero es de:</strong> 
+            <span id="body_lblPorcentajeObrero">0</span>%
+        </div>
+        <div class="total">
+            <strong>El porcentaje de personal administrativo es de:</strong> 
+            <span id="body_lblPorcentajeAdmin">0</span>%
+        </div>
+        <div class="total"> 
+            <strong>El mayor sueldo después del aumento para obreros es de:</strong> 
+            $<span id="body_lblMayorSueldoObrero">0</span>
+        </div>
+        <div class="total"> 
+            <strong>El mayor sueldo después del aumento para administrativos es de:</strong> 
+            $<span id="body_lblMayorSueldoAdmin">0</span>
+        </div>
+        <div id="div">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ES2020",           // Cambiar de "commonjs" a "ES2020"
+    "moduleResolution": "node",   // Añadir esta línea
+    "verbatimModuleSyntax": false, // Cambiar a false o eliminar esta línea
+    "outDir": "./dist",           // Los .js se guardarán en carpeta dist
+    "rootDir": "./src",           // Tus .ts están en carpeta src
+    "strict": true
+  }
+}
