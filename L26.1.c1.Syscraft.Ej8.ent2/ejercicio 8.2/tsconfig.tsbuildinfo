@@ -1,0 +1,1 @@
+{"root":["./src/controllers/cl_cestudiante.ts","./src/controllers/cl_creporte.ts","./src/models/cl_mestudiante.ts","./src/models/cl_mreporte.ts","./src/views/cl_vestudiante.ts","./src/views/cl_vreporte.ts"],"version":"5.9.3"}

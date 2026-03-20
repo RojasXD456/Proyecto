@@ -1,0 +1,1 @@
+{"root":["./src/controllers/Cl_cEstudiante.ts","./src/controllers/Cl_cReporte.ts","./src/models/Cl_mEstudiante.ts","./src/models/Cl_mReporte.ts","./src/views/Cl_vEstudiante.ts","./src/views/Cl_vReporte.ts"],"version":"5.9.3"}

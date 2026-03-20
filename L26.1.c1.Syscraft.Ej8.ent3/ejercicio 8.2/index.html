@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: beige;">
+    <script type="module">
+    import cReporte from "./dist/controllers/Cl_cReporte.js";
+    new cReporte();
+  </script>
+    <div id="app">
+        <section id="student" >
+            <h1 style="color: black;">Procesar Nota Estudiante</h1>
+            <input id="cedula" type="text" placeholder="Cedula">
+            <input id="nota" type="text" placeholder="Nota">
+            <input id="peso" type="text" placeholder="Peso">
+            <button id="saveInfo">Guardar Data</button>
+            <button id="cancelInfo">Cancelar</button>
+        </section>
+        <section id="report">
+            <h1 style="color: black;">Reporte Total</h1>
+            <button id="toggleVista">Ingresar Registro</button>
+            <button id="GenerateReport">Reporte Total</button>
+            
+            <div id="body-report" hidden style="padding-top: 4px;">
+                <div style="color: black; background-color: rgb(133, 133, 241);"> El total de estudiantes aprobados es <span id="body_lblTotalAprobados">0</span>
+                </div>
+                <div style="color: black; background-color: rgb(133, 133, 241);"> El total de estudiantes reprobados es<span id="body_lblTotalReprobados">0</span> </div>
+                <div style="color: black; background-color: rgb(133, 133, 241);"> El total de estudiantes es <span id="body_lblTotal">0</span> </div>
+                <div style="color: black; background-color: rgb(133, 133, 241);"> El promedio de nota por la materia es de: <span id="body_lblPromedio">0</span> </div>
+                <div style="color: black; background-color: rgb(133, 133, 241);"> El porcentaje de aprobados es de: <span id="body_lblPorcentaje">0</span></div>
+                <div style="color: black; background-color: rgb(133, 133, 241);"> El promedio de peso por la materia es de: <span id="body_lblPromedioPeso">0</span></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
